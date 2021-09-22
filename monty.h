@@ -1,11 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
-<<<<<<< HEAD
 
 #include <stddef.h>
 #include <stdlib.h>
-=======
->>>>>>> 8b42a715191b833ddfd111aeecf93bde0bc16a4e
 
 
 /**
