@@ -1,8 +1,11 @@
 #ifndef MONTY_H
 #define MONTY_H
+<<<<<<< HEAD
 
 #include <stddef.h>
 #include <stdlib.h>
+=======
+>>>>>>> 8b42a715191b833ddfd111aeecf93bde0bc16a4e
 
 
 /**
@@ -58,5 +61,3 @@ size_t print_stack(const stack_t *stack);
 void opcode(stack_t **stack, char *str, unsigned int line_cnt);
 
 #endif /* MONTY_H */
-
-
