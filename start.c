@@ -26,12 +26,12 @@ int main(int argc, char **argv)
 
 	global.data_struct = 1;  /* struct defined in monty.h */
 	if (argc != 2)
-		error_usage();  /* def in line 81 */
+		error_usage();  /* def in line 82 */
 
 	file = fopen(argv[1], "r");
 
 	if (!file)
-		file_error(argv[1]);  /* def in line 67 */
+		file_error(argv[1]);  /* def in line 68 */
 
 	while ((getline(&buffer, &buf_len, file)) != (-1))
 	{
