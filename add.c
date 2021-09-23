@@ -25,4 +25,3 @@ void _add(stack_t **stack, unsigned int line_cnt)
 	pop(stack, line_cnt); /*For top node*/
 	(*stack)->n = result;
 }
-
