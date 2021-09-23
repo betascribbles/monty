@@ -11,6 +11,7 @@
 		    {"pint", pint}, \
 		    {"pop", pop},   \
 		    {"swap", swap}, \
+		    {"add", _add},  \
 		{                   \
 			NULL, NULL    \
 		}                   \
