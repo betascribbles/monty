@@ -3,7 +3,6 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-<<<<<<< HEAD
 
 #define INSTRUCTIONS              \
 	{                           \
@@ -26,9 +25,6 @@
 			NULL, NULL      \
 		}                     \
 	}
-=======
-#include <string.h>
->>>>>>> 9d8d36af7c6d2de5679ac25cf449a5be2d47f231
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
