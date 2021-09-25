@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 		file_error(argv[1]);  /* def in line 68 */
 
 	while ((getline(&buffer, &buf_len, file)) != (-1))
-	{ /*Don't know which, but this is the block where the error is. Yes, let me check the issue.*/
+	{
 		if (status)
 			break;
 		if (*buffer == '\n')
