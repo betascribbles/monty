@@ -6,7 +6,7 @@
 /**
  * pint - print the top data
  * @stack: stack given by main
- * @line_cnt: ammount of lines
+ * @line_cnt: amount of lines
  *
  * Return: void
  */
