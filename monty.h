@@ -4,18 +4,26 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-#define INSTRUCTIONS            \
-	{                         \
-		{"push", push},     \
-		    {"pall", pall}, \
-		    {"pint", pint}, \
-		    {"pop", pop},   \
-		    {"swap", swap}, \
-		    {"add", _add},  \
-		    {"nop", nop},   \
-		{                   \
-			NULL, NULL    \
-		}                   \
+#define INSTRUCTIONS              \
+	{                           \
+		{"push", push},       \
+		    {"pall", pall},   \
+		    {"pint", pint},   \
+		    {"pop", pop},     \
+		    {"swap", swap},   \
+		    {"nop", nop},     \
+		    {"div", _div},    \
+		    {"mul", _mul},    \
+		    {"add", _add},    \
+		    {"sub", _sub},    \
+		    {"mod", mod},     \
+		    {"pchar", pchar}, \
+		    {"pstr", pstr},   \
+		    {"rotl", rotl},   \
+		    {"rotr", rotr},   \
+		{                     \
+			NULL, NULL      \
+		}                     \
 	}
 
 /**
@@ -74,11 +82,13 @@ void pint(stack_t **stack, unsigned int line_cnt);
 void swap(stack_t **stack, unsigned int line_cnt);
 void pop(stack_t **stack, unsigned int line_cnt);
 void nop(stack_t **stack, unsigned int line_cnt);
+
 void _div(stack_t **stack, unsigned int line_cnt);
 void _add(stack_t **stack, unsigned int line_cnt);
 void _sub(stack_t **stack, unsigned int line_cnt);
 void _mul(stack_t **stack, unsigned int line_cnt);
 void mod(stack_t **stack, unsigned int line_cnt);
+
 void pchar(stack_t **stack, unsigned int line_cnt);
 void pstr(stack_t **stack, unsigned int line_cnt);
 void rotl(stack_t **stack, unsigned int line_count);
