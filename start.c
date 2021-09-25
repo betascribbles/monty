@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 	if (!file)
 		file_error(argv[1]);  /* def in line 68 */
 
-	while ((getline(&buffer, &buf_len, file)) != (-1))
+	while (getline(&buffer, &buf_len, file) != -1)
 	{
 		if (status)
 			break;
