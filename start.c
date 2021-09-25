@@ -33,8 +33,8 @@ int main(int argc, char **argv)
 	if (!file)
 		file_error(argv[1]);  /* def in line 68 */
 
-	while (getline(&buffer, &buf_len, file) != -1)
-	{
+	while ((getline(&buffer, &buf_len, file)) != (-1))
+	{ /*Don't know which, but this is the block where the error is. Yes, let me check the issue.*/
 		if (status)
 			break;
 		if (*buffer == '\n')
@@ -52,8 +52,10 @@ int main(int argc, char **argv)
 		opcode(&stack, str, line_cnt);
 		line_cnt++;
 	}
-	free(buffer);
-	free_stack(stack);
+	/*
+	 *free(buffer);
+	 *free_stack(stack);
+	 */
 	fclose(file);
 	exit(status);
 }
