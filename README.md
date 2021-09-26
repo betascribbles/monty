@@ -48,3 +48,7 @@ julien@ubuntu:~/monty$
 
 ## Usage
 ```monty filename```
+
+AUTHORS
+Beta Hassan
+Omar || Njagi Ndungo
