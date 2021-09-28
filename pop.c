@@ -5,8 +5,8 @@
 #include "monty.h"
 
 /**
-* pop - pops the very top
-* @stack: stack given by main
+* pop - pops the very top element of the stack
+* @stack: stack given by main in start.c
 * @line_cnt: line number for error messages
 *
 * Return: void

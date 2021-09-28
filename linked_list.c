@@ -3,7 +3,7 @@
 #include "monty.h"
 
 /**
- * queue_node - adds a node to a stack_t stack in queue node
+ * queue_node - adds a node to a stack_t stack in queue_node
  * @stack: stack head
  * @n: number of the node
  *

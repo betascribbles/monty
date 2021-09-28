@@ -38,6 +38,5 @@ void opcode(stack_t **stack, char *str, unsigned int line_cnt)
 		i++;
 	}
 	fprintf(stderr, "L%d: unknown instruction %s\n", line_cnt, str);
-	/*status = EXIT_FAILURE;*/
 	exit(EXIT_FAILURE);
 }

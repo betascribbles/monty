@@ -4,8 +4,8 @@
 #include "monty.h"
 
 /**
- * pint - print the top data
- * @stack: stack given by main
+ * pint - print the value at the top of the stack
+ * @stack: stack given by main in start.c
  * @line_cnt: amount of lines
  *
  * Return: void
